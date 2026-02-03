@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bouncing box</title>
+    <style>
+        .box{
+            width:50px;
+            height:50px;
+            background-color: red;
+            position:relative;
+            margin:50px auto; 
+            border-radius: 100px;
+
+            animation-name:bounce;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+        }
+      @keyframes bounce{
+            from{
+                top:0px;
+            }
+            to{
+                top:400px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div><br>
+    
+</body>
+</html>
